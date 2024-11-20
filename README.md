@@ -1,4 +1,3 @@
-Here's a more visually engaging README with emojis and enhanced formatting for the **KS-Webhook_GUI** project:
 
 ---
 
@@ -69,4 +68,3 @@ For any help or suggestions, feel free to contact **xX_KSGaming_Xx**. Contributi
 
 --- 
 
-I added some fun emojis to make the README more visually appealing and engaging. Let me know if you'd like any more changes! 😊
