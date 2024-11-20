@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KS-Embed Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./project_logo.png" type="image/png">
+
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>KS-Embed Generator</h1>
+      <form id="embedForm">
+        <label for="webhookUrl">Webhook URL:</label>
+        <input type="url" id="webhookUrl" placeholder="Enter your webhook URL" required>
+
+        <label for="title">Embed Title:</label>
+        <input type="text" id="title" placeholder="Embed title">
+
+        <label for="description">Embed Description:</label>
+        <textarea id="description" placeholder="Embed description"></textarea>
+
+        <label for="color">Embed Color:</label>
+        <div class="color-picker">
+          <input type="color" id="color" value="#5865F2">
+          <input type="text" id="colorHex" placeholder="#5865F2" maxlength="7">
+        </div>
+
+        <label for="footer">Footer Text:</label>
+        <input type="text" id="footer" placeholder="Footer text">
+
+        <label for="image">Image URL (Top Bottom):</label>
+        <input type="url" id="image" placeholder="Image URL">
+
+        <label for="thumbnail">Image URL (Right):</label>
+        <input type="url" id="thumbnail" placeholder="Thumbnail URL">
+
+        <label for="avatar">Avatar URL:</label>
+        <input type="url" id="avatar" placeholder="Avatar URL">
+
+        <label for="botName">Bot Name:</label>
+        <input type="text" id="botName" placeholder="Bot Name" value="Embed Bot">
+        <button type="button" id="saveButton">Save Settings</button>
+        <button type="button" id="loadButton">Load Settings</button>
+        
+        <button type="button" id="previewButton">Preview Embed</button>
+        <button type="submit">Send to Webhook</button>
+      </form>
+    </div>
+    <div id="embedPreview" class="embed-preview">
+      <!-- Embed preview will render here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
